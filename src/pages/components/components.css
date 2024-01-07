@@ -1,0 +1,176 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height:  var(--header-height);
+    top: 0px;
+    background-color: rgb(198, 104, 121);
+}
+
+.header-icon {
+    position: relative;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: transparent; 
+    border: 0px;
+    font-size: 1rem;
+}
+
+.header-icon-image {
+    height: 70%;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: var(--header-height);
+
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--header-height));
+
+    background-color: rgb(105, 175, 175);
+    border-right: 3px solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-btn {
+    background-color: transparent; 
+    border: 0px;
+    font-size: 1.5rem;
+    margin: 10%;
+}
+
+#main-project-button {
+    margin-bottom: 0;
+}
+
+#main-project-button:hover {
+    color: black;
+}
+
+.project-btns-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-project-btns-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-delete-btn {
+    background-color: rgb(187, 80, 80);
+    border-radius: 5px;
+}
+
+.sidebar-project-btn {
+    background-color: transparent; 
+    border: 0px;
+    font-size: 1rem;
+    margin: 2%;
+}
+
+.sidebar-btn:hover {
+    color: white;
+}
+
+.plus-btn {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: auto;
+    align-self: flex-start;
+
+    background-color: rgb(181, 181, 184);
+    font-size: 2rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.main-content {
+    position: fixed;
+    left: var(--sidebar-width);
+    top: var(--header-height);
+
+    width: calc(100vw - var(--sidebar-width));
+    height: calc(100vh - var(--header-height));
+
+    background-color: rgb(95, 103, 103);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.empty-content {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    width: 90%;
+    height: max(30px, 7%);
+    background-color: rgb(233, 233, 238);
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-bottom: 10px;
+}
+
+.task-container > div, .task-container > button {
+    align-self: center;
+    padding: 10px;
+}
+
+.task-name {
+    margin-right: auto;
+}
+
+.task-button {
+    width: 15%;
+    height: 90%;
+}
+
+.task-button-icon {
+    height: 90%;
+}
+
+.details-container {
+    filter: blur(0px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(147, 136, 136);
+}
+
+.details-box-exit-button {
+    align-self: flex-end;
+}

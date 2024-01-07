@@ -1,0 +1,8 @@
+:root {
+    --header-height: 50px;
+    --sidebar-width: min(20%, 150px);
+}
+
+body {
+    margin: 0px;
+}
